@@ -8,43 +8,45 @@ slides.forEach((slide) => {
   // "to" tween (animate to provided values)
   gsap.to(h3Reveal, {
     // selector text, Array, or object
-    x: "200%", // any properties (not limited to CSS)
+    x: "60%", // any properties (not limited to CSS)
     scrollTrigger: {
       trigger: h3Reveal, // selector or element
-      start: "top 30%", // [trigger] [scroller] positions
-      end: "bottom bottom", // [trigger] [scroller] positions
+      start: "top 80%", // [trigger] [scroller] positions
+      end: "top 10%",
+      // [trigger] [scroller] positions
       // markers: true, // only during development!
-      toggleActions: "play none resume reverse",
+      toggleActions: "play reverse play reverse",
     },
-    duration: 1, // seconds
+    duration: 0.75, // seconds
     ease: "power2.inOut",
   });
   gsap.to(h5Reveal, {
     // selector text, Array, or object
-    x: "150%", // any properties (not limited to CSS)
+    x: "70%", // any properties (not limited to CSS)
     scrollTrigger: {
       trigger: h5Reveal, // selector or element
-      start: "top 30%", // [trigger] [scroller] positions
-      end: "bottom bottom", // [trigger] [scroller] positions
+      start: "top 80%", // [trigger] [scroller] positions
+      end: "top 10%", // [trigger] [scroller] positions
       // markers: true, // only during development!
-      toggleActions: "play none resume reverse",
+      toggleActions: "play reverse play reverse",
     },
-    duration: 1, // seconds
-    delay: 0.2,
+    duration: 0.75, // seconds
+    delay: 0.3,
     ease: "power1.inOut",
   });
   gsap.to(reveal, {
     // selector text, Array, or object
-    x: "120%", // any properties (not limited to CSS)
+    x: "90%", // any properties (not limited to CSS)
     scrollTrigger: {
       trigger: reveal, // selector or element
-      start: "top 30%", // [trigger] [scroller] positions
-      end: "bottom bottom", // [trigger] [scroller] positions
+      start: "top 80%", // [trigger] [scroller] positions
+      // end: "top 10%",
+      // end: "top top",
       // markers: true, // only during development!
-      toggleActions: "play none reverse reverse",
+      toggleActions: "play reverse play reverse",
     },
     duration: 1, // seconds
-    delay: 0.4,
+    delay: 0.3,
     ease: "power3.inOut",
   });
 });
