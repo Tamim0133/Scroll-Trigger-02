@@ -1,0 +1,29 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  background-color: black;
+}
+body {
+  overflow-x: hidden;
+}
+.reveal,
+.h3-reveal,
+.h5-reveal {
+  position: absolute;
+  height: 110%;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+}
+.h3-reveal {
+  background-color: palevioletred;
+}
+.h5-reveal {
+  background-color: tomato;
+}
+.reveal {
+  background-color: black;
+}
+section {
+  margin-top: 15rem;
+}
